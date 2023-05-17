@@ -1,0 +1,1 @@
+Pymongo queries for practicing on restaurants dataset
