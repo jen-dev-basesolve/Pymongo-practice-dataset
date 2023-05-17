@@ -1,0 +1,23 @@
+----------------
+# start a mongo instance in python 
+ > from  pymongo import MongoClient
+
+# start mongod in terminal
+> myclient = pymongo.MongoClient("URI_TO_MONGO_CLUSTER")
+# for local instance we can write as >  myclient = pymongo.MongoClient("mongod://localhost:27017/")
+
+# adding a database to a client
+>my_database_variable = myclient.database_name
+
+# adding collection to the database
+> my_collection = my_database_variable.collection_name
+
+# adding document to collection
+> my_collection.insert_one( {any json object } )
+
+# print all the contents of  collection 
+> anyvar = collection.find( { } )
+>  for i in anyvar :
+> 	print( i )
+
+
